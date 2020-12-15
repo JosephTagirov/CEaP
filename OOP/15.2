@@ -1,0 +1,26 @@
+class Animal(object):
+    def __init__(self, name):
+        self.__name = name
+        print("An animal was born.")
+
+    def eat(self):
+        print("mmm yummy")
+
+    def makeNoise(self):
+        print(' '.join((self.name, "growls \"Arrr\"")))
+
+    def setname(self, name):
+        self.__name = name
+
+    def getname(self):
+        print(self.__name)
+        return self.__name
+
+    name = property(getname, setname)
+
+
+anm = Animal('Mark II')
+anm.makeNoise()
+anm.eat()
+anm.setname('Mark III')
+anm.getname()
