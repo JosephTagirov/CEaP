@@ -1,0 +1,11 @@
+class Point:
+    def __init__(self):
+         self.sv = ''
+    def set(self, x, y):
+        self.sv = x, y
+    def get(self):
+        return self.sv
+
+spot = Point()
+spot.set(2, 3)
+print("X,Y coordinates are: ", spot.get())
