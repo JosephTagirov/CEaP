@@ -1,0 +1,11 @@
+class StringVar:
+    def __init__(self):
+         self.sv = ''
+    def set(self, val):
+        self.sv = val
+    def get(self):
+        return self.sv
+
+sv = StringVar()
+sv.set('Don\'t starve at me')
+print(sv.get())
